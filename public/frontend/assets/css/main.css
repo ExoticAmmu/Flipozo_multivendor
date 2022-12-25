@@ -9513,7 +9513,6 @@ span.fi-rs-apps {
   max-width: 150px;
 }
 
-/*newsletter*/
 footer .mobile-social-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9542,54 +9541,6 @@ footer .hotline img {
   margin-right: 12px;
   max-width: 30px;
   opacity: 0.5;
-}
-
-.newsletter {
-  position: relative;
-}
-
-.newsletter .newsletter-inner {
-  background: url(../imgs/banner/banner-10.png) no-repeat center;
-  background-size: cover;
-  padding: 84px 78px;
-  clear: both;
-  display: table;
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  min-height: 230px;
-}
-
-.newsletter .newsletter-inner img {
-  position: absolute;
-  right: 50px;
-  bottom: 0;
-  max-width: 40%;
-}
-
-.newsletter .newsletter-inner .newsletter-content p {
-  font-size: 18px;
-}
-
-.newsletter .newsletter-inner .newsletter-content form {
-  background-color: #fff;
-  max-width: 450px;
-  border-radius: 50px;
-  position: relative;
-  z-index: 4;
-}
-
-.newsletter .newsletter-inner .newsletter-content form input {
-  border: 0;
-  border-radius: 50px 0 0 50px;
-  padding-left: 58px;
-  background: url(../imgs/theme/icons/icon-plane.png) no-repeat 25px center;
-}
-
-.newsletter .newsletter-inner .newsletter-content form button {
-  border: 0;
-  border-radius: 50px;
-  font-weight: 700;
 }
 
 .widget-about {
@@ -12179,12 +12130,6 @@ footer .hotline img {
     font-size: 16px;
     font-weight: 600;
   }
-  .newsletter .des {
-    display: none;
-  }
-  .newsletter form {
-    margin: 15px 0;
-  }
   footer .col-lg-2.col-md-3 {
     width: 50%;
   }
@@ -12258,19 +12203,6 @@ footer .hotline img {
   .product-list-small .col-md-8 {
     float: left;
     max-width: 70%;
-  }
-  .newsletter .newsletter-inner {
-    padding: 20px;
-  }
-  .newsletter .newsletter-inner h2 {
-    font-size: 22px;
-  }
-  .newsletter .newsletter-inner .newsletter-content p {
-    font-size: 14px;
-    margin-bottom: 25px !important;
-  }
-  .newsletter .newsletter-inner button.submit, .newsletter .newsletter-inner button[type="submit"] {
-    padding: 12px 20px;
   }
   .footer-link-widget:not(:last-child) {
     margin-right: 0;
