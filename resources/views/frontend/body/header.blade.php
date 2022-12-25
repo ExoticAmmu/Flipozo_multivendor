@@ -169,7 +169,6 @@
                                         src="{{ asset('frontend/assets/imgs/theme/icons/icon-user.svg') }}" />
                                 </a>
 
-
                                 @auth
                                     <a href="page-account.html"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
@@ -204,7 +203,6 @@
                                     <a href="{{ route('login') }}"><span class="lable ml-0">Login</span></a>
 
                                     <span class="lable" style="margin-left: 2px; margin-right: 2px;"> | </span>
-
 
                                     <a href="{{ route('register') }}"><span class="lable ml-0">Register</span></a>
 
