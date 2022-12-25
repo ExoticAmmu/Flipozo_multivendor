@@ -1878,7 +1878,7 @@ input.qty-val {
 
 .hero-slider-1 .single-hero-slider {
   height: 538px;
-  border-radius: 30px;
+  border-radius: 20px;
   background-size: cover;
   background-position: center center;
 }
@@ -2344,7 +2344,6 @@ input.qty-val {
   border: 1px solid #F4F6FA;
   border-radius: 10px;
   padding: 20px 0px 18px 0px;
-  margin-bottom: 20px;
   min-height: 180px;
   -webkit-transition: 0.2s;
   transition: 0.2s;

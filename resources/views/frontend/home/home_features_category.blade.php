@@ -2,7 +2,6 @@
     $categories = App\Models\Category::orderBy('category_name','ASC')->get();
     @endphp
 
-
    <section class="popular-categories section-padding">
             <div class="container wow animate__animated animate__fadeIn">
                 <div class="section-title">

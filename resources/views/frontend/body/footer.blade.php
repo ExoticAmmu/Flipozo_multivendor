@@ -166,9 +166,9 @@ $setting = App\Models\SiteSetting::find(1);
                   
                 </div>
         </section>
-        <div class="container pb-30 wow animate__animated animate__fadeInUp" data-wow-delay="0">
+        <div class="container pb-10 wow animate__animated animate__fadeInUp" data-wow-delay="0">
             <div class="row align-items-center">
-                <div class="col-12 mb-30">
+                <div class="col-12 mb-10">
                     <div class="footer-bottom"></div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6">
