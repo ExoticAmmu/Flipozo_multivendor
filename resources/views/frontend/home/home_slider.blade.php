@@ -3,9 +3,9 @@
     $slider = App\Models\Slider::orderBy('slider_title','ASC')->get();
     @endphp
 
- <section class="home-slider position-relative mb-30">
+ <section class="home-slider position-relative mb-30 mt-30">
             <div class="container">
-                <div class="home-slide-cover mt-30">
+                <div class="home-slide-cover">
                     <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
 
                     @foreach($slider as $item)

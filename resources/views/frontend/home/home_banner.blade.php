@@ -2,8 +2,7 @@
     $banner = App\Models\Banner::orderBy('banner_title','ASC')->limit(3)->get();
     @endphp
 
-
- <section class="banners mb-25">
+ <section class="banners mb-30 mt-30">
             <div class="container">
                 <div class="row">
 
