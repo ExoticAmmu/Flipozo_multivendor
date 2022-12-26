@@ -107,12 +107,6 @@
                                         <option>Florida</option>
                                         <option>Georgia</option>
                                         <option>Hawaii</option>
-                                        <option>Indiana</option>
-                                        <option>Maryland</option>
-                                        <option>Nevada</option>
-                                        <option>New Jersey</option>
-                                        <option>New Mexico</option>
-                                        <option>New York</option>
                                     </select>
                                 </form>
                             </div>
