@@ -6,14 +6,14 @@ Email: codervent@gmail.com
 File: app.css
 */
 
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
 	font-size: 14px;
 	color: #4c5258;
 	letter-spacing: .5px;
 	background-color: #f4f4f4;
 	overflow-x: hidden;
-	font-family: Roboto, sans-serif
+	font-family: Poppins, sans-serif
 }
 
 a {
@@ -32,7 +32,7 @@ a {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	background: #fff;
+	background: #405189;
 	border-right: 0 solid #e4e4e4;
 	z-index: 11;
 	box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12)!important;
@@ -49,7 +49,7 @@ a {
 	bottom: 0;
 	padding: 0 15px;
 	z-index: 5;
-	background: #fff;
+	background: #405189;
 	background-clip: padding-box;
 	border-bottom: 1px solid #e4e4e4
 }
@@ -63,13 +63,13 @@ a {
 	margin-left: 10px;
 	margin-bottom: 0;
 	letter-spacing: 1px;
-	color: #0d6efd
+	color: #fff
 }
 
 .toggle-icon {
 	font-size: 22px;
 	cursor: pointer;
-	color: #0d6efd
+	color: #fff
 }
 
 .topbar {
@@ -176,18 +176,20 @@ a {
 	align-items: center;
 	justify-content: left;
 	padding: 8px 15px;
-	font-size: 15px;
-	color: #5f5f5f;
+	font-size: 13px;
+	color: #abb9e8;
 	outline-width: 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	letter-spacing: .5px;
 	border: 1px solid #ffffff00;
-	transition: all .3s ease-out
+	transition: all .3s ease-out;
+	font-family: hkgrotesk,sans-serif;
+	
 }
 
 .sidebar-wrapper .metismenu a .parent-icon {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1
 }
 
@@ -197,7 +199,7 @@ a {
 
 .sidebar-wrapper .metismenu ul a {
 	padding: 6px 15px 6px 15px;
-	font-size: 15px;
+	font-size: 13px;
 	border: 0
 }
 
@@ -206,8 +208,7 @@ a {
 }
 
 .sidebar-wrapper .metismenu ul {
-	border: 1px solid #ededed;
-	background: #fff
+	padding-left: 10px;
 }
 
 .sidebar-wrapper .metismenu ul ul a {
@@ -222,9 +223,8 @@ a {
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:hover {
-	color: #0d6efd;
+	color: #fff;
 	text-decoration: none;
-	background: rgb(13 110 253 / .12)
 }
 
 .menu-label {
@@ -2059,7 +2059,7 @@ input.search-control-2::placeholder {
 
 .header-notifications-list {
 	position: relative;
-	height: 360px
+	height: 300px
 }
 
 .dropdown-large .notify {
@@ -2411,4 +2411,80 @@ input.search-control-2::placeholder {
 	.chat-top-header-menu {
 		display: none
 	}
+}
+
+/* 
+custom css 
+*/
+
+.avatar-sm {
+    height: 3rem;
+    width: 3rem;
+}
+.bg-soft-success {
+    background-color: rgba(10,179,156,.18)!important;
+}
+.bg-soft-info {
+    background-color: rgba(41,156,219,.18)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(247,184,75,.18)!important;
+}
+.bg-soft-primary {
+    background-color: rgba(64,81,137,.18)!important;
+}
+.avatar-title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #405189;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+.card-body {
+    color: #405189;
+	font-size: 13px;
+	box-shadow: none;
+}
+.card-body a{
+    color: #405189;
+}
+.card-animate {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.text-muted {
+    color: #878a99!important;
+}
+.ff-secondary {
+    font-family: hkgrotesk,sans-serif;
+}
+.fs-22 {
+    font-size: 22px!important;
+}
+.fw-medium {
+    font-weight: 500;
+}
+.fw-semibold {
+    font-weight: 600!important;
+}
+.counter-value{
+	color: #495057;
+}
+.fs-14 {
+    font-size: 14px!important;
+}
+.card-animate:hover
+{-webkit-transform:translateY(calc(-1.5rem / 5));
+	transform:translateY(calc(-1.5rem / 5));
+	-webkit-box-shadow:0 5px 10px rgba(30,32,37,.12);
+	box-shadow:0 5px 10px rgba(30,32,37,.12)
 }

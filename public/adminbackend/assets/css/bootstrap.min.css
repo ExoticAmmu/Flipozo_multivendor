@@ -3510,7 +3510,7 @@ textarea.form-control-lg {
 	border: 0 solid transparent;
 	border-radius: .25rem;
 	margin-bottom: 1.5rem;
-	box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12)
+	border-color: rgba(0, 0, 0, 0.125);
 }
 .card>hr {
 	margin-right: 0;

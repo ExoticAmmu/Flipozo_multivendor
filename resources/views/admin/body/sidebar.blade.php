@@ -11,7 +11,6 @@
     </div>
     <!--navigation-->
     <ul class="metismenu" id="menu">
-
         <li>
             <a href="{{ route('admin.dashobard') }}">
                 <div class="parent-icon"><i class='bx bx-home-circle'></i>
@@ -29,11 +28,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('brand.list'))
-                        <li> <a href="{{ route('all.brand') }}"><i class="bx bx-right-arrow-alt"></i>All Brand</a>
+                        <li> <a href="{{ route('all.brand') }}"><i class='bx bx-minus'></i>All Brand</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('brand.add'))
-                        <li> <a href="{{ route('add.brand') }}"><i class="bx bx-right-arrow-alt"></i>Add Brand </a>
+                        <li> <a href="{{ route('add.brand') }}"><i class='bx bx-minus'></i>Add Brand </a>
                         </li>
                     @endif
                 </ul>
@@ -49,11 +48,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('category.list'))
-                        <li> <a href="{{ route('all.category') }}"><i class="bx bx-right-arrow-alt"></i>All Category</a>
+                        <li> <a href="{{ route('all.category') }}"><i class='bx bx-minus'></i>All Category</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('category.add'))
-                        <li> <a href="{{ route('add.category') }}"><i class="bx bx-right-arrow-alt"></i>Add Category</a>
+                        <li> <a href="{{ route('add.category') }}"><i class='bx bx-minus'></i>Add Category</a>
                         </li>
                     @endif
 
@@ -69,12 +68,12 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('subcategory.list'))
-                        <li> <a href="{{ route('all.subcategory') }}"><i class="bx bx-right-arrow-alt"></i>All
+                        <li> <a href="{{ route('all.subcategory') }}"><i class='bx bx-minus'></i>All
                                 SubCategory</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('subcategory.add'))
-                        <li> <a href="{{ route('add.subcategory') }}"><i class="bx bx-right-arrow-alt"></i>Add
+                        <li> <a href="{{ route('add.subcategory') }}"><i class='bx bx-minus'></i>Add
                                 SubCategory</a>
                         </li>
                     @endif
@@ -91,11 +90,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('product.list'))
-                        <li> <a href="{{ route('all.product') }}"><i class="bx bx-right-arrow-alt"></i>All Product</a>
+                        <li> <a href="{{ route('all.product') }}"><i class='bx bx-minus'></i>All Product</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('product.add'))
-                        <li> <a href="{{ route('add.product') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
+                        <li> <a href="{{ route('add.product') }}"><i class='bx bx-minus'></i>Add Product</a>
                         </li>
                     @endif
 
@@ -112,11 +111,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('slider.list'))
-                        <li> <a href="{{ route('all.slider') }}"><i class="bx bx-right-arrow-alt"></i>All Slider</a>
+                        <li> <a href="{{ route('all.slider') }}"><i class='bx bx-minus'></i>All Slider</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('slider.add'))
-                        <li> <a href="{{ route('add.slider') }}"><i class="bx bx-right-arrow-alt"></i>Add Slider</a>
+                        <li> <a href="{{ route('add.slider') }}"><i class='bx bx-minus'></i>Add Slider</a>
                         </li>
                     @endif
 
@@ -133,11 +132,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('ads.list'))
-                        <li> <a href="{{ route('all.banner') }}"><i class="bx bx-right-arrow-alt"></i>All Banner</a>
+                        <li> <a href="{{ route('all.banner') }}"><i class='bx bx-minus'></i>All Banner</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('ads.add'))
-                        <li> <a href="{{ route('add.banner') }}"><i class="bx bx-right-arrow-alt"></i>Add Banner</a>
+                        <li> <a href="{{ route('add.banner') }}"><i class='bx bx-minus'></i>Add Banner</a>
                         </li>
                     @endif
                 </ul>
@@ -152,11 +151,11 @@
                 </a>
                 <ul>
                     @if (Auth::user()->can('coupon.list'))
-                        <li> <a href="{{ route('all.coupon') }}"><i class="bx bx-right-arrow-alt"></i>All Coupon</a>
+                        <li> <a href="{{ route('all.coupon') }}"><i class='bx bx-minus'></i>All Coupon</a>
                         </li>
                     @endif
                     @if (Auth::user()->can('coupon.add'))
-                        <li> <a href="{{ route('add.coupon') }}"><i class="bx bx-right-arrow-alt"></i>Add Coupon</a>
+                        <li> <a href="{{ route('add.coupon') }}"><i class='bx bx-minus'></i>Add Coupon</a>
                         </li>
                     @endif
 
@@ -171,19 +170,17 @@
                     <div class="menu-title">Shipping Area </div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('all.division') }}"><i class="bx bx-right-arrow-alt"></i>All Division</a>
+                    <li> <a href="{{ route('all.division') }}"><i class='bx bx-minus'></i>All Division</a>
                     </li>
-                    <li> <a href="{{ route('all.district') }}"><i class="bx bx-right-arrow-alt"></i>All District</a>
+                    <li> <a href="{{ route('all.district') }}"><i class='bx bx-minus'></i>All District</a>
                     </li>
 
-                    <li> <a href="{{ route('all.state') }}"><i class="bx bx-right-arrow-alt"></i>All State</a>
+                    <li> <a href="{{ route('all.state') }}"><i class='bx bx-minus'></i>All State</a>
                     </li>
 
                 </ul>
             </li>
         @endif
-
-        <li class="menu-label">UI Elements</li>
         @if (Auth::user()->can('vendor.menu'))
             <li>
                 <a href="javascript:;" class="has-arrow">
@@ -192,10 +189,10 @@
                     <div class="menu-title">Vendor Manage </div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('inactive.vendor') }}"><i class="bx bx-right-arrow-alt"></i>Inactive
+                    <li> <a href="{{ route('inactive.vendor') }}"><i class='bx bx-minus'></i>Inactive
                             Vendor</a>
                     </li>
-                    <li> <a href="{{ route('active.vendor') }}"><i class="bx bx-right-arrow-alt"></i>Active Vendor</a>
+                    <li> <a href="{{ route('active.vendor') }}"><i class='bx bx-minus'></i>Active Vendor</a>
                     </li>
 
                 </ul>
@@ -210,7 +207,7 @@
                     <div class="menu-title">Order Manage </div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('pending.order') }}"><i class="bx bx-right-arrow-alt"></i>Pending
+                    <li> <a href="{{ route('pending.order') }}"><i class='bx bx-minus'></i>Pending
                             Order</a>
                     </li>
                     <li> <a href="{{ route('admin.confirmed.order') }}"><i
@@ -237,7 +234,7 @@
                     <div class="menu-title">Return Order </div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('return.request') }}"><i class="bx bx-right-arrow-alt"></i>Return
+                    <li> <a href="{{ route('return.request') }}"><i class='bx bx-minus'></i>Return
                             Request</a>
                     </li>
                     <li> <a href="{{ route('complete.return.request') }}"><i
@@ -254,10 +251,10 @@
                     <div class="menu-title">Reports Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('report.view') }}"><i class="bx bx-right-arrow-alt"></i>Report View</a>
+                    <li> <a href="{{ route('report.view') }}"><i class='bx bx-minus'></i>Report View</a>
                     </li>
 
-                    <li> <a href="{{ route('order.by.user') }}"><i class="bx bx-right-arrow-alt"></i>Order By
+                    <li> <a href="{{ route('order.by.user') }}"><i class='bx bx-minus'></i>Order By
                             User</a>
                     </li>
 
@@ -274,10 +271,10 @@
                     <div class="menu-title">User Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('all-user') }}"><i class="bx bx-right-arrow-alt"></i>All User</a>
+                    <li> <a href="{{ route('all-user') }}"><i class='bx bx-minus'></i>All User</a>
                     </li>
 
-                    <li> <a href="{{ route('all-vendor') }}"><i class="bx bx-right-arrow-alt"></i>All Vendor</a>
+                    <li> <a href="{{ route('all-vendor') }}"><i class='bx bx-minus'></i>All Vendor</a>
                     </li>
 
 
@@ -293,11 +290,11 @@
                     <div class="menu-title">Blog Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('admin.blog.category') }}"><i class="bx bx-right-arrow-alt"></i>All Blog
+                    <li> <a href="{{ route('admin.blog.category') }}"><i class='bx bx-minus'></i>All Blog
                             Categroy</a>
                     </li>
 
-                    <li> <a href="{{ route('admin.blog.post') }}"><i class="bx bx-right-arrow-alt"></i>All Blog
+                    <li> <a href="{{ route('admin.blog.post') }}"><i class='bx bx-minus'></i>All Blog
                             Post</a>
                     </li>
 
@@ -313,11 +310,11 @@
                     <div class="menu-title">Review Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('pending.review') }}"><i class="bx bx-right-arrow-alt"></i>Pending
+                    <li> <a href="{{ route('pending.review') }}"><i class='bx bx-minus'></i>Pending
                             Review</a>
                     </li>
 
-                    <li> <a href="{{ route('publish.review') }}"><i class="bx bx-right-arrow-alt"></i>Publish
+                    <li> <a href="{{ route('publish.review') }}"><i class='bx bx-minus'></i>Publish
                             Review</a>
                     </li>
 
@@ -333,10 +330,10 @@
                     <div class="menu-title">Setting Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('site.setting') }}"><i class="bx bx-right-arrow-alt"></i>Site Setting</a>
+                    <li> <a href="{{ route('site.setting') }}"><i class='bx bx-minus'></i>Site Setting</a>
                     </li>
 
-                    <li> <a href="{{ route('seo.setting') }}"><i class="bx bx-right-arrow-alt"></i>Seo Setting</a>
+                    <li> <a href="{{ route('seo.setting') }}"><i class='bx bx-minus'></i>Seo Setting</a>
                     </li>
 
 
@@ -351,7 +348,7 @@
                     <div class="menu-title">Stock Manage</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('product.stock') }}"><i class="bx bx-right-arrow-alt"></i>Product
+                    <li> <a href="{{ route('product.stock') }}"><i class='bx bx-minus'></i>Product
                             Stock</a>
                     </li>
 
@@ -360,7 +357,6 @@
         @endif
 
         @if (Auth::user()->can('role.permission.menu'))
-            <li class="menu-label">Roles And Permission</li>
             <li>
                 <a class="has-arrow" href="javascript:;">
                     <div class="parent-icon"><i class="lni lni-users"></i>
@@ -368,17 +364,17 @@
                     <div class="menu-title">Role & Permission</div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('all.permission') }}"><i class="bx bx-right-arrow-alt"></i>All
+                    <li> <a href="{{ route('all.permission') }}"><i class='bx bx-minus'></i>All
                             Permission</a>
                     </li>
-                    <li> <a href="{{ route('all.roles') }}"><i class="bx bx-right-arrow-alt"></i>All Roles</a>
+                    <li> <a href="{{ route('all.roles') }}"><i class='bx bx-minus'></i>All Roles</a>
                     </li>
 
-                    <li> <a href="{{ route('add.roles.permission') }}"><i class="bx bx-right-arrow-alt"></i>Roles in
+                    <li> <a href="{{ route('add.roles.permission') }}"><i class='bx bx-minus'></i>Roles in
                             Permission</a>
                     </li>
 
-                    <li> <a href="{{ route('all.roles.permission') }}"><i class="bx bx-right-arrow-alt"></i>All Roles
+                    <li> <a href="{{ route('all.roles.permission') }}"><i class='bx bx-minus'></i>All Roles
                             in Permission</a>
                     </li>
 
@@ -393,9 +389,9 @@
                     <div class="menu-title">Admin Manage </div>
                 </a>
                 <ul>
-                    <li> <a href="{{ route('all.admin') }}"><i class="bx bx-right-arrow-alt"></i>All Admin</a>
+                    <li> <a href="{{ route('all.admin') }}"><i class='bx bx-minus'></i>All Admin</a>
                     </li>
-                    <li> <a href="{{ route('add.admin') }}"><i class="bx bx-right-arrow-alt"></i>Add Admin</a>
+                    <li> <a href="{{ route('add.admin') }}"><i class='bx bx-minus'></i>Add Admin</a>
                     </li>
 
 
