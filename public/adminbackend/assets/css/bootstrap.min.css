@@ -1472,7 +1472,7 @@ progress {
 	border-bottom-width: 1px
 }
 .table>tbody {
-	vertical-align: inherit
+	vertical-align: middle;
 }
 .table>thead {
 	vertical-align: bottom
@@ -1631,7 +1631,8 @@ progress {
 	}
 }
 .form-label {
-	margin-bottom: .5rem
+	margin-bottom: .5rem;
+	font-weight: 500;
 }
 .col-form-label {
 	padding-top: calc(.375rem + 1px);
@@ -2362,13 +2363,13 @@ textarea.form-control-lg {
 }
 .btn-primary {
 	color: #fff;
-	background-color: #0d6efd;
-	border-color: #0d6efd
+	background-color: #0ab39c;
+	border-color: #0ab39c;
 }
 .btn-primary:hover {
 	color: #fff;
-	background-color: #0b5ed7;
-	border-color: #0a58ca
+	background-color: #099885;
+	border-color: #099885
 }
 .btn-check:focus+.btn-primary, .btn-primary:focus {
 	color: #fff;
@@ -3535,10 +3536,12 @@ textarea.form-control-lg {
 }
 .card-body {
 	flex: 1 1 auto;
-	padding: 1rem 1rem
+	padding: 1rem 1rem;
+	background-color: #fff;
+	border-radius: 8px;
 }
 .card-title {
-	margin-bottom: .5rem
+	margin-bottom: 0;
 }
 .card-subtitle {
 	margin-top: -.25rem;
@@ -3765,6 +3768,7 @@ textarea.form-control-lg {
 	text-decoration: none;
 	background-color: #fff;
 	border: 1px solid #dee2e6;
+	border-radius: .25rem;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 @media (prefers-reduced-motion:reduce) {
@@ -3791,8 +3795,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
 	z-index: 3;
 	color: #fff;
-	background-color: #0d6efd;
-	border-color: #0d6efd
+	background-color: #405189;
+	border-color: #405189;
 }
 .page-item.disabled .page-link {
 	color: #6c757d;
@@ -3804,48 +3808,45 @@ textarea.form-control-lg {
 	padding: .375rem .75rem
 }
 .page-item:first-child .page-link {
-	border-top-left-radius: .25rem;
-	border-bottom-left-radius: .25rem
+	border-radius: .25rem;
 }
 .page-item:last-child .page-link {
-	border-top-right-radius: .25rem;
-	border-bottom-right-radius: .25rem
+	border-radius: .25rem;
 }
 .pagination-lg .page-link {
 	padding: .75rem 1.5rem;
 	font-size: 1.25rem
 }
 .pagination-lg .page-item:first-child .page-link {
-	border-top-left-radius: .3rem;
-	border-bottom-left-radius: .3rem
+	border-radius: .25rem;
 }
 .pagination-lg .page-item:last-child .page-link {
-	border-top-right-radius: .3rem;
-	border-bottom-right-radius: .3rem
+	border-radius: .25rem;
 }
 .pagination-sm .page-link {
 	padding: .25rem .5rem;
 	font-size: .875rem
 }
 .pagination-sm .page-item:first-child .page-link {
-	border-top-left-radius: .2rem;
-	border-bottom-left-radius: .2rem
+	border-radius: .25rem;
 }
 .pagination-sm .page-item:last-child .page-link {
-	border-top-right-radius: .2rem;
-	border-bottom-right-radius: .2rem
+	border-radius: .25rem;
+}
+.paginate_button{
+	margin: 5px;
 }
 .badge {
 	display: inline-block;
 	padding: .35em .65em;
-	font-size: .75em;
-	font-weight: 700;
+	font-size: 12px;
+	font-weight: 500;
 	line-height: 1;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
-	border-radius: .25rem
+	border-radius: .25rem;
 }
 .badge:empty {
 	display: none
@@ -6105,7 +6106,7 @@ textarea.form-control-lg {
 	line-height: 2!important
 }
 .bg-primary {
-	background-color: #0d6efd!important
+	background-color: #405189!important
 }
 .bg-secondary {
 	background-color: #6c757d!important

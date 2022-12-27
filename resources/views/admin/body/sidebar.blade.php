@@ -13,12 +13,31 @@
     <ul class="metismenu" id="menu">
         <li>
             <a href="{{ route('admin.dashobard') }}">
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                <div class="parent-icon"><i class='bx bxs-dashboard'></i>
                 </div>
                 <div class="menu-title">Dashboard</div>
             </a>
         </li>
+        @if (Auth::user()->can('product.menu'))
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="lni lni-fresh-juice"></i>
+                </div>
+                <div class="menu-title">Products</div>
+            </a>
+            <ul>
+                @if (Auth::user()->can('product.list'))
+                    <li> <a href="{{ route('all.product') }}"><i class='bx bx-minus'></i>All Product</a>
+                    </li>
+                @endif
+                @if (Auth::user()->can('product.add'))
+                    <li> <a href="{{ route('add.product') }}"><i class='bx bx-minus'></i>Add Product</a>
+                    </li>
+                @endif
 
+            </ul>
+        </li>
+    @endif
         @if (Auth::user()->can('brand.menu'))
             <li>
                 <a href="javascript:;" class="has-arrow">
@@ -75,26 +94,6 @@
                     @if (Auth::user()->can('subcategory.add'))
                         <li> <a href="{{ route('add.subcategory') }}"><i class='bx bx-minus'></i>Add
                                 SubCategory</a>
-                        </li>
-                    @endif
-
-                </ul>
-            </li>
-        @endif
-        @if (Auth::user()->can('product.menu'))
-            <li>
-                <a href="javascript:;" class="has-arrow">
-                    <div class="parent-icon"><i class="lni lni-fresh-juice"></i>
-                    </div>
-                    <div class="menu-title">Product Manage</div>
-                </a>
-                <ul>
-                    @if (Auth::user()->can('product.list'))
-                        <li> <a href="{{ route('all.product') }}"><i class='bx bx-minus'></i>All Product</a>
-                        </li>
-                    @endif
-                    @if (Auth::user()->can('product.add'))
-                        <li> <a href="{{ route('add.product') }}"><i class='bx bx-minus'></i>Add Product</a>
                         </li>
                     @endif
 

@@ -189,7 +189,7 @@ a {
 }
 
 .sidebar-wrapper .metismenu a .parent-icon {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1
 }
 
@@ -2487,4 +2487,14 @@ custom css
 	transform:translateY(calc(-1.5rem / 5));
 	-webkit-box-shadow:0 5px 10px rgba(30,32,37,.12);
 	box-shadow:0 5px 10px rgba(30,32,37,.12)
+}
+
+.ck-editor__editable[role="textbox"] {
+	/* editing area */
+	min-height: 200px;
+	max-height: 500px;
+}
+
+.parent-icon {
+	font-size: 24px;
 }
