@@ -20,7 +20,7 @@
             </div>
         </div>
         <!--end breadcrumb-->
-        <div class="container">
+        <div class="container-fluid">
             <div class="main-body">
                 <div class="row">
 

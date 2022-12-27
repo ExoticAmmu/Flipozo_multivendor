@@ -36,7 +36,6 @@
                                     <td>{{ $item->product_name }}</td>
                                     <td>{{ $item->selling_price }}</td>
                                     <td>{{ $item->product_qty }}</td>
-
                                     <td>
                                         @if ($item->discount_price == null)
                                             <span class="badge rounded-pill bg-info">No Discount</span>
@@ -48,9 +47,6 @@
                                             <span class="badge rounded-pill bg-danger"> {{ round($discount) }}%</span>
                                         @endif
                                     </td>
-
-
-
                                     <td>
                                         @if ($item->status == 1)
                                             <span class="badge rounded-pill bg-success">Active</span>
@@ -58,9 +54,7 @@
                                             <span class="badge rounded-pill bg-danger">InActive</span>
                                         @endif
                                     </td>
-
                                     <td>
-
                                         @if (Auth::user()->can('product.edit'))
                                             <a href="{{ route('edit.product', $item->id) }}" class="parent-icon"
                                                 title="Edit Data"> <i class='bx bxs-edit'></i> </a>
@@ -79,18 +73,13 @@
                                             <a href="{{ route('product.active', $item->id) }}" class="parent-icon"
                                                 title="Active"><i class='bx bx-toggle-left'> </i> </a>
                                         @endif
-
                                     </td>
                                 </tr>
                             @endforeach
-
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 @endsection

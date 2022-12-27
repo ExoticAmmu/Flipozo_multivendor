@@ -2,11 +2,9 @@
 @section('admin')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div class="page-content">
-        <div>
             <h5 class="card-title mb-4">Add New Brand</h5>
-        </div>
-        <div class="container">
-            <div class="main-body">
+        <div class="container-fluid">
+            <div class="form-body">
                 <div class="row">
                     <div class="card-body border border-1 p-4 rounded">
                         <form id="myForm" method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data">
@@ -19,25 +17,23 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="inputProductTitle" class="form-label">Brand Image</label>
-
                                 <input type="file" name="brand_image" class="form-control" id="image" />
-
                             </div>
                             <div class="form-group mb-3">
                                 <img id="showImage" src="{{ url('upload/no_image.jpg') }}" alt="Admin"
                                     style="width:150px; height: 150px;">
                             </div>
-                            <div class="row">
-                                <div class="col-sm-3"></div>
-                                <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                            <div class="col-12">
+                                <div class="d-grid">
+                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                </div>
                             </div>
-
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 
