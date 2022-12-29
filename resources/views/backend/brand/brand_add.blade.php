@@ -9,7 +9,6 @@
                     <div class="card-body border border-1 p-4 rounded">
                         <form id="myForm" method="post" action="{{ route('store.brand') }}" enctype="multipart/form-data">
                             @csrf
-
                             <div class="form-group mb-3">
                                 <label for="inputProductTitle" class="form-label">Brand Name</label>
                                 <input type="text" name="brand_name" class="form-control" id="inputProductTitle"

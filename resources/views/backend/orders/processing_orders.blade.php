@@ -1,27 +1,7 @@
 @extends('admin.admin_dashboard')
 @section('admin')
     <div class="page-content">
-        <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">All Processing Order</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">All Processing Order</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="ms-auto">
-                <div class="btn-group">
-
-                </div>
-            </div>
-        </div>
-        <!--end breadcrumb-->
-
-        <hr />
+        <h5 class="card-title mb-4">All Processing Order</h5>
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -48,25 +28,17 @@
                                     <td> <span class="badge rounded-pill bg-success"> {{ $item->status }}</span></td>
 
                                     <td>
-                                        <a href="{{ route('admin.order.details', $item->id) }}" class="btn btn-info"
-                                            title="Details"><i class="fa fa-eye"></i> </a>
-
-                                        <a href="{{ route('admin.invoice.download', $item->id) }}" class="btn btn-danger"
-                                            title="Invoice Pdf"><i class="fa fa-download"></i> </a>
-
+                                        <a href="{{ route('admin.order.details', $item->id) }}" class="parent-icon"
+                                            title="Details"><i class='bx bx-show' ></i> </a>
+                                        <a href="{{ route('admin.invoice.download', $item->id) }}" class="parent-icon"
+                                            title="Invoice Pdf"><i class='bx bxs-file-pdf' ></i> </a>
                                     </td>
                                 </tr>
                             @endforeach
-
-
                         </tbody>
-
                     </table>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 @endsection

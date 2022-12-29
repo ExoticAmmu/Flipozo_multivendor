@@ -19,25 +19,25 @@
             </a>
         </li>
         @if (Auth::user()->can('product.menu'))
-        <li>
-            <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="lni lni-fresh-juice"></i>
-                </div>
-                <div class="menu-title">Products</div>
-            </a>
-            <ul>
-                @if (Auth::user()->can('product.list'))
-                    <li> <a href="{{ route('all.product') }}"><i class='bx bx-minus'></i>All Product</a>
-                    </li>
-                @endif
-                @if (Auth::user()->can('product.add'))
-                    <li> <a href="{{ route('add.product') }}"><i class='bx bx-minus'></i>Add Product</a>
-                    </li>
-                @endif
+            <li>
+                <a href="javascript:;" class="has-arrow">
+                    <div class="parent-icon"><i class="lni lni-fresh-juice"></i>
+                    </div>
+                    <div class="menu-title">Products</div>
+                </a>
+                <ul>
+                    @if (Auth::user()->can('product.list'))
+                        <li> <a href="{{ route('all.product') }}"><i class='bx bx-minus'></i>All Product</a>
+                        </li>
+                    @endif
+                    @if (Auth::user()->can('product.add'))
+                        <li> <a href="{{ route('add.product') }}"><i class='bx bx-minus'></i>Add Product</a>
+                        </li>
+                    @endif
 
-            </ul>
-        </li>
-    @endif
+                </ul>
+            </li>
+        @endif
         @if (Auth::user()->can('brand.menu'))
             <li>
                 <a href="javascript:;" class="has-arrow">
@@ -209,14 +209,14 @@
                     <li> <a href="{{ route('pending.order') }}"><i class='bx bx-minus'></i>Pending
                             Order</a>
                     </li>
-                    <li> <a href="{{ route('admin.confirmed.order') }}"><i
-                                class="bx bx-right-arrow-alt"></i>Confirmed Order</a>
+                    <li> <a href="{{ route('admin.confirmed.order') }}"><i class="bx bx-minus"></i>Confirmed
+                            Order</a>
                     </li>
-                    <li> <a href="{{ route('admin.processing.order') }}"><i
-                                class="bx bx-right-arrow-alt"></i>Processing Order</a>
+                    <li> <a href="{{ route('admin.processing.order') }}"><i class="bx bx-minus"></i>Processing
+                            Order</a>
                     </li>
-                    <li> <a href="{{ route('admin.delivered.order') }}"><i
-                                class="bx bx-right-arrow-alt"></i>Delivered Order</a>
+                    <li> <a href="{{ route('admin.delivered.order') }}"><i class="bx bx-minus"></i>Delivered
+                            Order</a>
                     </li>
 
 
@@ -236,8 +236,8 @@
                     <li> <a href="{{ route('return.request') }}"><i class='bx bx-minus'></i>Return
                             Request</a>
                     </li>
-                    <li> <a href="{{ route('complete.return.request') }}"><i
-                                class="bx bx-right-arrow-alt"></i>Complete Request</a>
+                    <li> <a href="{{ route('complete.return.request') }}"><i class="bx bx-minus"></i>Complete
+                            Request</a>
                     </li>
                 </ul>
             </li>
@@ -400,5 +400,3 @@
     </ul>
     <!--end navigation-->
 </div>
-
-

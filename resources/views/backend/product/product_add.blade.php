@@ -2,9 +2,8 @@
 @section('admin')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div class="page-content">
-        <div>
+        
             <h5 class="card-title mb-4">Add New Product</h5>
-        </div>
             <div class="row">
                 <form id="myForm" method="post" action="{{ route('store.product') }}" enctype="multipart/form-data">
                     @csrf

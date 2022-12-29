@@ -2,9 +2,9 @@
 @section('admin')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <div class="page-content">
-        <div>
-            <h5 class="card-title">Edit Product</h5>
-        </div>
+
+        <h5 class="card-title">Edit Product</h5>
+
         <form id="myForm" method="post" action="{{ route('update.product') }}">
             @csrf
 
@@ -202,7 +202,7 @@
         <div class="row">
 
             <div class="col-lg-4">
-                
+
                 <h5 class="card-title mb-4">Update Product Image </h5>
                 <div class="card">
                     <form method="post" action="{{ route('update.product.thambnail') }}" enctype="multipart/form-data">
@@ -258,8 +258,7 @@
                                                     name="multi_img[{{ $img->id }}]">
                                             </td>
                                             <td>
-                                                <input type="submit" class="btn btn-primary"
-                                                    value="Update"/>
+                                                <input type="submit" class="btn btn-primary" value="Update" />
                                                 <a href="{{ route('product.multiimg.delete', $img->id) }}"
                                                     class="btn btn-primary text-white" id="delete"> Delete </a>
                                             </td>

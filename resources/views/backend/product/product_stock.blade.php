@@ -1,26 +1,7 @@
 @extends('admin.admin_dashboard')
 @section('admin')
     <div class="page-content">
-        <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">All Product Stock</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">All Product Stock <span
-                                class="badge rounded-pill bg-danger"> {{ count($products) }} </span> </li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="ms-auto">
-
-            </div>
-        </div>
-        <!--end breadcrumb-->
-
-        <hr />
+        <h5 class="card-title mb-4">All Product Stock</h5>
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -57,9 +38,6 @@
                                             <span class="badge rounded-pill bg-danger"> {{ round($discount) }}%</span>
                                         @endif
                                     </td>
-
-
-
                                     <td>
                                         @if ($item->status == 1)
                                             <span class="badge rounded-pill bg-success">Active</span>
@@ -67,20 +45,12 @@
                                             <span class="badge rounded-pill bg-danger">InActive</span>
                                         @endif
                                     </td>
-
-
                                 </tr>
                             @endforeach
-
-
                         </tbody>
-
                     </table>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 @endsection

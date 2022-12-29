@@ -11,38 +11,38 @@
                         <form id="myForm" method="post" action="{{ route('update.state') }}">
                             @csrf
                             <input type="hidden" name="id" value="{{ $state->id }}">
-							<div class="form-group mb-3">
+                            <div class="form-group mb-3">
                                 <label for="inputProductTitle" class="form-label">Division Name</label>
                                 <select name="division_id" class="form-select mb-3" aria-label="Default select example">
-									<option selected="">select </option>
+                                    <option selected="">select </option>
 
-									@foreach ($division as $item)
-										<option value="{{ $item->id }}"
-											{{ $item->id == $state->division_id ? 'selected' : '' }}>
-											{{ $item->division_name }}</option>
-									@endforeach
+                                    @foreach ($division as $item)
+                                        <option value="{{ $item->id }}"
+                                            {{ $item->id == $state->division_id ? 'selected' : '' }}>
+                                            {{ $item->division_name }}</option>
+                                    @endforeach
 
-								</select>
+                                </select>
                             </div>
-							<div class="form-group mb-3">
+                            <div class="form-group mb-3">
                                 <label for="inputProductTitle" class="form-label">District Name</label>
                                 <select name="district_id" class="form-select mb-3" aria-label="Default select example">
-									<option selected="">Open this select menu</option>
+                                    <option selected="">Open this select menu</option>
 
-									@foreach ($district as $item)
-										<option value="{{ $item->id }}"
-											{{ $item->id == $state->district_id ? 'selected' : '' }}>
-											{{ $item->district_name }}</option>
-									@endforeach
+                                    @foreach ($district as $item)
+                                        <option value="{{ $item->id }}"
+                                            {{ $item->id == $state->district_id ? 'selected' : '' }}>
+                                            {{ $item->district_name }}</option>
+                                    @endforeach
 
-								</select>
+                                </select>
                             </div>
-							<div class="form-group mb-3">
+                            <div class="form-group mb-3">
                                 <label for="inputProductTitle" class="form-label">State Name</label>
-								<input type="text" name="state_name" class="form-control"
-								value="{{ $state->state_name }}" />
+                                <input type="text" name="state_name" class="form-control"
+                                    value="{{ $state->state_name }}" />
                             </div>
-							<div class="row">
+                            <div class="row">
                                 <div class="col-sm-3"></div>
                                 <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
                             </div>
@@ -52,7 +52,6 @@
             </div>
         </div>
     </div>
-
 
     <script type="text/javascript">
         $(document).ready(function() {

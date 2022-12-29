@@ -1,7 +1,6 @@
 @extends('admin.admin_dashboard')
 @section('admin')
     <div class="page-content">
-
         <div class="d-none d-sm-flex align-items-center mb-3">
             <h5 class="card-title">All Products</h5>
             <div class="ms-auto">

@@ -10,7 +10,6 @@
                     <div class="card-body border border-1 p-4 rounded">
                         <form id="myForm" method="post" action="{{ route('update.banner') }}" enctype="multipart/form-data">
                             @csrf
-
                             <input type="hidden" name="id" value="{{ $banner->id }}">
                             <input type="hidden" name="old_img" value="{{ $banner->banner_image }}">
                             <div class="form-group mb-3">
@@ -31,17 +30,16 @@
                                 <img id="showImage" src="{{ asset($banner->banner_image) }}" alt="Admin"
                                     style="width:150px; height: 150px;">
                             </div>
-                            <div class="row">
-                                <div class="col-sm-3"></div>
-                                <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                            <div class="col-12">
+                                <div class="d-grid">
+                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                </div>
                             </div>
-
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <script type="text/javascript">
         $(document).ready(function() {

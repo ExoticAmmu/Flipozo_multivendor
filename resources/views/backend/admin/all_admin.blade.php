@@ -1,27 +1,14 @@
 @extends('admin.admin_dashboard')
 @section('admin')
     <div class="page-content">
-        <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">All Admin User</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">All Admin User</li>
-                    </ol>
-                </nav>
-            </div>
+        <div class="d-none d-sm-flex align-items-center mb-3">
+            <h5 class="card-title mb-4">All Admin User</h5>
             <div class="ms-auto">
                 <div class="btn-group">
-                    <a href="{{ route('add.admin') }}" class="btn btn-primary">Add Admin User</a>
+                    <a href="{{ route('add.admin') }}" class="btn btn-primary">Add Admin</a>
                 </div>
             </div>
         </div>
-        <!--end breadcrumb-->
-
-        <hr />
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -63,16 +50,10 @@
                                     </td>
                                 </tr>
                             @endforeach
-
-
                         </tbody>
-
                     </table>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 @endsection

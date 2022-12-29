@@ -1,27 +1,9 @@
 @extends('admin.admin_dashboard')
 @section('admin')
     <div class="page-content">
-        <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">All Active Vendor</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">Active Vendor</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="ms-auto">
-                <div class="btn-group">
-
-                </div>
-            </div>
+        <div class="d-none d-sm-flex align-items-center mb-3">
+            <h5 class="card-title">All Active Vendor</h5>
         </div>
-        <!--end breadcrumb-->
-
-        <hr />
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -45,12 +27,11 @@
                                     <td> {{ $item->username }}</td>
                                     <td> {{ $item->vendor_join }}</td>
                                     <td> {{ $item->email }} </td>
-                                    <td> <span class="btn btn-success">{{ $item->status }}</span> </td>
+                                    <td> <span class="badge rounded-pill bg-success">{{ $item->status }}</span> </td>
 
                                     <td>
-                                        <a href="{{ route('active.vendor.details', $item->id) }}" class="btn btn-info">Vendor
-                                            Details</a>
-
+                                        <a href="{{ route('active.vendor.details', $item->id) }}" class="parent-icon"
+                                            title="Edit Data"> <i class='bx bxs-edit'></i> </a>
 
                                     </td>
                                 </tr>
