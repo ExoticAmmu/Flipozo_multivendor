@@ -40,7 +40,6 @@
                                 </div>
                             </a>
                             <div class="header-notifications-list">
-
                                 @php
                                     $user = Auth::user();
                                 @endphp
@@ -224,18 +223,13 @@
             @php
                 $id = Auth::user()->id;
                 $adminData = App\Models\User::find($id);
-                
             @endphp
-
             <div class="user-box dropdown">
                 <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-
                     <img src="{{ !empty($adminData->photo) ? url('upload/admin_images/' . $adminData->photo) : url('upload/no_image.jpg') }}"
                         class="user-img" alt="user avatar">
-
-
                     <div class="user-info ps-3">
                         <p class="user-name mb-0">{{ Auth::user()->name }}</p>
                         <p class="designattion mb-0">{{ Auth::user()->username }}</p>
@@ -247,18 +241,6 @@
                     </li>
                     <li><a class="dropdown-item" href="{{ route('admin.change.password') }}"><i
                                 class="bx bx-cog"></i><span>Change Password</span></a>
-                    </li>
-                    <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-home-circle'></i><span>Dashboard</span></a>
-                    </li>
-                    <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-dollar-circle'></i><span>Earnings</span></a>
-                    </li>
-                    <li><a class="dropdown-item" href="javascript:;"><i
-                                class='bx bx-download'></i><span>Downloads</span></a>
-                    </li>
-                    <li>
-                        <div class="dropdown-divider mb-0"></div>
                     </li>
                     <li><a class="dropdown-item" href="{{ route('admin.logout') }}"><i
                                 class='bx bx-log-out-circle'></i><span>Logout</span></a>

@@ -218,9 +218,6 @@
                     <li> <a href="{{ route('admin.delivered.order') }}"><i class="bx bx-minus"></i>Delivered
                             Order</a>
                     </li>
-
-
-
                 </ul>
             </li>
         @endif
@@ -256,8 +253,6 @@
                     <li> <a href="{{ route('order.by.user') }}"><i class='bx bx-minus'></i>Order By
                             User</a>
                     </li>
-
-
                 </ul>
             </li>
         @endif
@@ -275,8 +270,6 @@
 
                     <li> <a href="{{ route('all-vendor') }}"><i class='bx bx-minus'></i>All Vendor</a>
                     </li>
-
-
                 </ul>
             </li>
         @endif
@@ -296,8 +289,6 @@
                     <li> <a href="{{ route('admin.blog.post') }}"><i class='bx bx-minus'></i>All Blog
                             Post</a>
                     </li>
-
-
                 </ul>
             </li>
         @endif
@@ -316,8 +307,6 @@
                     <li> <a href="{{ route('publish.review') }}"><i class='bx bx-minus'></i>Publish
                             Review</a>
                     </li>
-
-
                 </ul>
             </li>
         @endif
@@ -376,7 +365,6 @@
                     <li> <a href="{{ route('all.roles.permission') }}"><i class='bx bx-minus'></i>All Roles
                             in Permission</a>
                     </li>
-
                 </ul>
             </li>
         @endif
@@ -392,8 +380,6 @@
                     </li>
                     <li> <a href="{{ route('add.admin') }}"><i class='bx bx-minus'></i>Add Admin</a>
                     </li>
-
-
                 </ul>
             </li>
         @endif

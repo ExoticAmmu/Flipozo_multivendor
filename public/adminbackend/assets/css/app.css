@@ -2099,7 +2099,6 @@ input.search-control-2::placeholder {
 	-webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 	border: 0 solid #e9ecef;
-	border-radius: 10px;
 	font-size: 14px
 }
 

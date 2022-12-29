@@ -1,28 +1,15 @@
 @extends('vendor.vendor_dashboard')
 @section('vendor')
     <div class="page-content">
-        <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">Vendor All Product</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">Vendor All Product <span
-                                class="badge rounded-pill bg-danger"> {{ count($products) }} </span> </li>
-                    </ol>
-                </nav>
-            </div>
+        <div class="d-none d-sm-flex align-items-center mb-3">
+            <h5 class="card-title">VendorAll Products</h5>
             <div class="ms-auto">
                 <div class="btn-group">
                     <a href="{{ route('vendor.add.product') }}" class="btn btn-primary">Add Product</a>
                 </div>
             </div>
         </div>
-        <!--end breadcrumb-->
 
-        <hr />
         <div class="card">
             <div class="card-body">
                 <div class="table-responsive">
@@ -60,9 +47,6 @@
                                             <span class="badge rounded-pill bg-danger"> {{ round($discount) }}%</span>
                                         @endif
                                     </td>
-
-
-
                                     <td>
                                         @if ($item->status == 1)
                                             <span class="badge rounded-pill bg-success">Active</span>
@@ -72,38 +56,32 @@
                                     </td>
 
                                     <td>
-                                        <a href="{{ route('vendor.edit.product', $item->id) }}" class="btn btn-info"
-                                            title="Edit Data"> <i class="fa fa-pencil"></i> </a>
+                                        <a href="{{ route('vendor.edit.product', $item->id) }}" class="parent-icon"
+                                            title="Edit Data"> <i class='bx bxs-edit'></i> </a>
 
-                                        <a href="{{ route('vendor.delete.product', $item->id) }}" class="btn btn-danger"
-                                            id="delete" title="Delete Data"><i class="fa fa-trash"></i></a>
+                                        <a href="{{ route('vendor.delete.product', $item->id) }}" class="parent-icon"
+                                            id="delete" title="Delete Data"><i class='bx bx-trash'></i></a>
 
-                                        <a href="{{ route('edit.category', $item->id) }}" class="btn btn-warning"
-                                            title="Details Page"> <i class="fa fa-eye"></i> </a>
+                                        <a href="{{ route('edit.category', $item->id) }}" class="parent-icon"
+                                            title="Details Page"> <i class='bx bx-show'></i> </a>
 
                                         @if ($item->status == 1)
                                             <a href="{{ route('vendor.product.inactive', $item->id) }}"
-                                                class="btn btn-primary" title="Inactive"> <i
-                                                    class="fa-solid fa-thumbs-down"></i> </a>
+                                                class="parent-icon"
+                                                title="Inactive"><i class='bx bx-toggle-right'></i> </a>
                                         @else
                                             <a href="{{ route('vendor.product.active', $item->id) }}"
-                                                class="btn btn-primary" title="Active"> <i
-                                                    class="fa-solid fa-thumbs-up"></i> </a>
+                                                class="parent-icon"
+                                                title="Active"><i class='bx bx-toggle-left'> </i> </a>
                                         @endif
 
                                     </td>
                                 </tr>
                             @endforeach
-
-
                         </tbody>
-
                     </table>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 @endsection

@@ -75,24 +75,10 @@
                 <ul>
                     <li> <a href="{{ route('vendor.all.review') }}"><i class="bx bx-minus"></i>All Review</a>
                     </li>
-
-
-
                 </ul>
             </li>
         @else
         @endif
-
-
-
-
-        <li>
-            <a href=" " target="_blank">
-                <div class="parent-icon"><i class="bx bx-support"></i>
-                </div>
-                <div class="menu-title">Support</div>
-            </a>
-        </li>
     </ul>
     <!--end navigation-->
 </div>

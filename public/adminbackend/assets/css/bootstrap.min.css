@@ -2878,7 +2878,9 @@ textarea.form-control-lg {
 .dropdown-menu-end {
 	--bs-position: end;
 	right: 0;
-	left: auto
+	left: auto;
+	padding: 10px ;
+	margin: 10px ;
 }
 @media (min-width:576px) {
 	.dropdown-menu-sm-start {
