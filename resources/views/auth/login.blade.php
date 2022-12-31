@@ -19,17 +19,12 @@
     <!-- Toaster -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
     <!-- Toaster   -->
-
-
 </head>
-
 <body>
 
     @include('frontend.body.header')
 
     <!-- End Header  -->
-
-
 
     <main class="main pages">
         <div class="page-header breadcrumb-wrap">
@@ -54,11 +49,10 @@
                                     <div class="padding_eight_all bg-white">
                                         <div class="heading_s1">
                                             <h1 class="mb-5">Login</h1>
-                                            <p class="mb-30">Don't have an account? <a href="page-register.html">Create
-                                                    here</a></p>
+                                            <p class="mb-30">Don't have an account? <span class="lable" style="margin-left: 2px; margin-right: 2px;"> | </span>
+
+                                                <a href="{{ route('register') }}"><span class="lable ml-0">Register</span></a></p>
                                         </div>
-
-
                                         <form method="POST" action="{{ route('login') }}">
                                             @csrf
 

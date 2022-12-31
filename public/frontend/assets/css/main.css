@@ -3924,7 +3924,7 @@ table .product-thumbnail img {
   background-color: #fff;
   overflow: hidden;
   max-height: 320px;
-  padding: 25px 25px 0 25px;
+  padding: 15px 15px 15px 15px;
 }
 
 .product-cart-wrap .product-img-action-wrap .product-action-1 {
@@ -4133,7 +4133,7 @@ table .product-thumbnail img {
 }
 
 .product-cart-wrap .product-content-wrap {
-  padding: 0 20px 20px 20px;
+  padding: 0 15px 15px 15px;
 }
 
 .product-cart-wrap .product-content-wrap .product-category {
@@ -4248,7 +4248,7 @@ table .product-thumbnail img {
 .product-cart-wrap .product-card-bottom .add-cart .add {
   position: relative;
   display: inline-block;
-  padding: 6px 20px 6px 20px;
+  padding: 6px 18px 6px 18px;
   border-radius: 4px;
   background-color: #DEF9EC;
   font-size: 14px;

@@ -29,7 +29,6 @@
     <div class="container">
         <div class="section-title style-2 wow animate__animated animate__fadeIn">
             <h3>{{ $skip_category_0->category_name }} Category </h3>
-
         </div>
         <!--End nav-tabs-->
         <div class="tab-content" id="myTabContent">
@@ -43,7 +42,8 @@
                                 data-wow-delay=".1s">
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
-                                        <a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                        <a
+                                            href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                             <img class="default-img" src="{{ asset($product->product_thambnail) }}"
                                                 alt="" />
 
@@ -66,8 +66,6 @@
                                         $discount = ($amount / $product->selling_price) * 100;
                                         
                                     @endphp
-
-
                                     <div class="product-badges product-badges-position product-badges-mrg">
 
                                         @if ($product->discount_price == null)
@@ -75,15 +73,14 @@
                                         @else
                                             <span class="hot"> {{ round($discount) }} %</span>
                                         @endif
-
-
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
                                         <a href="shop-grid-right.html">{{ $product['category']['category_name'] }}</a>
                                     </div>
-                                    <h2><a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                    <h2><a
+                                            href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                             {{ $product->product_name }} </a></h2>
                                     @php
                                         
@@ -96,7 +93,6 @@
                                             ->where('status', 1)
                                             ->avg('rating');
                                     @endphp
-
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
                                             @if ($avarage == 0)
@@ -114,9 +110,6 @@
                                         </div>
                                         <span class="font-small ml-5 text-muted"> ({{ count($reviewcount) }})</span>
                                     </div>
-
-
-
                                     <div>
                                         @if ($product->vendor_id == null)
                                             <span class="font-small text-muted">By <a
@@ -125,9 +118,6 @@
                                             <span class="font-small text-muted">By <a
                                                     href="vendor-details-1.html">{{ $product['vendor']['name'] }}</a></span>
                                         @endif
-
-
-
                                     </div>
                                     <div class="product-card-bottom">
 
@@ -142,9 +132,6 @@
                                                 <span class="old-price">${{ $product->selling_price }}</span>
                                             </div>
                                         @endif
-
-
-
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i
                                                     class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -155,42 +142,25 @@
                         </div>
                         <!--end product card-->
                     @endforeach
-
-
-
-
-
                 </div>
                 <!--End product-grid-4-->
             </div>
-
-
         </div>
         <!--End tab-content-->
     </div>
-
-
 </section>
 <!--End Fashion Category -->
 
-
-
-
-
 <!-- SweetHome Category -->
-
 <section class="product-tabs section-padding position-relative">
     <div class="container">
         <div class="section-title style-2 wow animate__animated animate__fadeIn">
             <h3>{{ $skip_category_2->category_name }} Category </h3>
-
         </div>
         <!--End nav-tabs-->
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                 <div class="row product-grid-4">
-
-
                     @foreach ($skip_product_2 as $product)
                         <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                             <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
@@ -201,7 +171,6 @@
                                             href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                             <img class="default-img" src="{{ asset($product->product_thambnail) }}"
                                                 alt="" />
-
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -215,14 +184,11 @@
                                             data-bs-target="#quickViewModal" id="{{ $product->id }}"
                                             onclick="productView(this.id)"><i class="fi-rs-eye"></i></a>
                                     </div>
-
                                     @php
                                         $amount = $product->selling_price - $product->discount_price;
                                         $discount = ($amount / $product->selling_price) * 100;
                                         
                                     @endphp
-
-
                                     <div class="product-badges product-badges-position product-badges-mrg">
 
                                         @if ($product->discount_price == null)
@@ -230,8 +196,6 @@
                                         @else
                                             <span class="hot"> {{ round($discount) }} %</span>
                                         @endif
-
-
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
@@ -255,12 +219,8 @@
                                             <span class="font-small text-muted">By <a
                                                     href="vendor-details-1.html">{{ $product['vendor']['name'] }}</a></span>
                                         @endif
-
-
-
                                     </div>
                                     <div class="product-card-bottom">
-
                                         @if ($product->discount_price == null)
                                             <div class="product-price">
                                                 <span>${{ $product->selling_price }}</span>
@@ -272,9 +232,6 @@
                                                 <span class="old-price">${{ $product->selling_price }}</span>
                                             </div>
                                         @endif
-
-
-
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i
                                                     class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -285,46 +242,25 @@
                         </div>
                         <!--end product card-->
                     @endforeach
-
-
-
-
-
                 </div>
                 <!--End product-grid-4-->
             </div>
-
-
         </div>
         <!--End tab-content-->
     </div>
-
-
 </section>
 <!--End SweetHome Category -->
 
-
-
-
-
-
-
-
-
 <!-- Mobile Category -->
-
 <section class="product-tabs section-padding position-relative">
     <div class="container">
         <div class="section-title style-2 wow animate__animated animate__fadeIn">
             <h3>{{ $skip_category_7->category_name }} Category </h3>
-
         </div>
         <!--End nav-tabs-->
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
                 <div class="row product-grid-4">
-
-
                     @foreach ($skip_product_7 as $product)
                         <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
                             <div class="product-cart-wrap mb-30 wow animate__animated animate__fadeIn"
@@ -335,7 +271,6 @@
                                             href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                             <img class="default-img" src="{{ asset($product->product_thambnail) }}"
                                                 alt="" />
-
                                         </a>
                                     </div>
                                     <div class="product-action-1">
@@ -349,14 +284,11 @@
                                             data-bs-target="#quickViewModal" id="{{ $product->id }}"
                                             onclick="productView(this.id)"><i class="fi-rs-eye"></i></a>
                                     </div>
-
                                     @php
                                         $amount = $product->selling_price - $product->discount_price;
                                         $discount = ($amount / $product->selling_price) * 100;
                                         
                                     @endphp
-
-
                                     <div class="product-badges product-badges-position product-badges-mrg">
 
                                         @if ($product->discount_price == null)
@@ -364,8 +296,6 @@
                                         @else
                                             <span class="hot"> {{ round($discount) }} %</span>
                                         @endif
-
-
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
@@ -389,12 +319,8 @@
                                             <span class="font-small text-muted">By <a
                                                     href="vendor-details-1.html">{{ $product['vendor']['name'] }}</a></span>
                                         @endif
-
-
-
                                     </div>
                                     <div class="product-card-bottom">
-
                                         @if ($product->discount_price == null)
                                             <div class="product-price">
                                                 <span>${{ $product->selling_price }}</span>
@@ -406,9 +332,6 @@
                                                 <span class="old-price">${{ $product->selling_price }}</span>
                                             </div>
                                         @endif
-
-
-
                                         <div class="add-cart">
                                             <a class="add" href="shop-cart.html"><i
                                                     class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -419,28 +342,14 @@
                         </div>
                         <!--end product card-->
                     @endforeach
-
-
-
-
-
                 </div>
                 <!--End product-grid-4-->
             </div>
-
-
         </div>
         <!--End tab-content-->
     </div>
-
-
 </section>
 <!--End Mobile Category -->
-
-
-
-
-
 
 <section class="section-padding mb-30">
     <div class="container">
@@ -449,7 +358,6 @@
                 data-wow-delay="0">
                 <h4 class="section-title style-1 mb-30 animated animated"> Hot Deals </h4>
                 <div class="product-list-small animated animated">
-
                     @foreach ($hot_deals as $item)
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
@@ -458,7 +366,8 @@
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                    <a
+                                        href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                         {{ $item->product_name }} </a>
                                 </h6>
                                 <div class="product-rate-cover">
@@ -481,21 +390,12 @@
                             </div>
                         </article>
                     @endforeach
-
-
-
                 </div>
             </div>
-
-
-
-
             <div class="col-xl-3 col-lg-4 col-md-6 mb-md-0 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".1s">
                 <h4 class="section-title style-1 mb-30 animated animated"> Special Offer </h4>
                 <div class="product-list-small animated animated">
-
-
                     @foreach ($special_offer as $item)
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
@@ -504,7 +404,8 @@
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                    <a
+                                        href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                         {{ $item->product_name }} </a>
                                 </h6>
                                 <div class="product-rate-cover">
@@ -527,17 +428,12 @@
                             </div>
                         </article>
                     @endforeach
-
-
-
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-lg-block wow animate__animated animate__fadeInUp"
                 data-wow-delay=".2s">
                 <h4 class="section-title style-1 mb-30 animated animated">Recently added</h4>
                 <div class="product-list-small animated animated">
-
-
                     @foreach ($new as $item)
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
@@ -546,7 +442,8 @@
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                    <a
+                                        href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                         {{ $item->product_name }} </a>
                                 </h6>
                                 <div class="product-rate-cover">
@@ -558,7 +455,6 @@
                                 @if ($item->discount_price == null)
                                     <div class="product-price">
                                         <span>${{ $item->selling_price }}</span>
-
                                     </div>
                                 @else
                                     <div class="product-price">
@@ -569,17 +465,12 @@
                             </div>
                         </article>
                     @endforeach
-
-
-
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-xl-block wow animate__animated animate__fadeInUp"
                 data-wow-delay=".3s">
                 <h4 class="section-title style-1 mb-30 animated animated"> Special Deals </h4>
                 <div class="product-list-small animated animated">
-
-
                     @foreach ($special_deals as $item)
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
@@ -588,7 +479,8 @@
                             </figure>
                             <div class="col-md-8 mb-0">
                                 <h6>
-                                    <a href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
+                                    <a
+                                        href="{{ url('product/details/' . $product->id . '/' . $product->product_slug) }}">
                                         {{ $item->product_name }} </a>
                                 </h6>
                                 <div class="product-rate-cover">
@@ -611,10 +503,6 @@
                             </div>
                         </article>
                     @endforeach
-
-
-
-
                 </div>
             </div>
         </div>
@@ -622,12 +510,9 @@
 </section>
 <!--End 4 columns-->
 
-
-
 <!--Vendor List -->
 
 @include('frontend.home.home_vendor_list')
 
 <!--End Vendor List -->
-
 @endsection

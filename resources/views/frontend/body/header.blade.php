@@ -96,20 +96,6 @@
                     </div>
                     <div class="header-action-right">
                         <div class="header-action-2">
-                            <div class="search-location">
-                                <form action="#">
-                                    <select class="select-active">
-                                        <option>Your Location</option>
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>Arizona</option>
-                                        <option>Delaware</option>
-                                        <option>Florida</option>
-                                        <option>Georgia</option>
-                                        <option>Hawaii</option>
-                                    </select>
-                                </form>
-                            </div>
 
                             <div class="header-action-icon-2">
                                 <a href="{{ route('compare') }}">
@@ -194,11 +180,7 @@
                                         </ul>
                                     </div>
                                 @else
-                                    <a href="{{ route('login') }}"><span class="lable ml-0">Login</span></a>
-
-                                    <span class="lable" style="margin-left: 2px; margin-right: 2px;"> | </span>
-
-                                    <a href="{{ route('register') }}"><span class="lable ml-0">Register</span></a>
+                                    <a href="{{ route('login') }}"><span class="lable ml-0">Account</span></a>
 
                                 @endauth
 
